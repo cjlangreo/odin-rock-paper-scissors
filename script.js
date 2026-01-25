@@ -16,3 +16,15 @@ function getHumanChoice(){
   console.log(`Human chose ${humanChoice}!`);
   return humanChoice
 }
+
+function getRoundWinner(humanChoice, computerChoice){
+  if(
+    (humanChoice === "rock" && computerChoice === "scissors") ||
+    (humanChoice === "paper" && computerChoice === "rock") ||
+    (humanChoice === "scissors" && computerChoice === "paper")
+  ){
+    return "human"
+  } else if (humanChoice === computerChoice){
+    return "tie"
+  } else return "computer"
+}
