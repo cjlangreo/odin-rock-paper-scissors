@@ -40,3 +40,9 @@ function playRound(humanChoice, computerChoice){
     console.log("Computer wins the round!");
   } else console.log("Round tie!");
 }
+
+function displayScoreAndRound(currentRound) {
+  console.log(`Human score: ${humanScore}`);
+  console.log(`Computer score: ${computerScore}`);
+  console.log(`Round ${currentRound + 1} of ${TOTAL_ROUNDS}`);
+}
