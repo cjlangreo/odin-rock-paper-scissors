@@ -46,3 +46,13 @@ function displayScoreAndRound(currentRound) {
   console.log(`Computer score: ${computerScore}`);
   console.log(`Round ${currentRound + 1} of ${TOTAL_ROUNDS}`);
 }
+
+function playGame(){
+  for(let round = 0; round < TOTAL_ROUNDS; round++){
+    displayScoreAndRound(round)
+    playRound(getHumanChoice(), getComputerChoice())
+  }
+  if(humanScore > computerScore) console.log("Human wins!");
+  else if (computerScore > humanScore) console.log("Computer wins!");
+  else console.log("It's a tie!");
+}
