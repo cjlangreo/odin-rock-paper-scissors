@@ -37,16 +37,16 @@ function logScore(){
 
 function playGame(){
 
-function playRound(humanChoice, computerChoice){
-  const winner = getRoundWinner(humanChoice, computerChoice)
-  if(winner === "human") {
-    humanScore += 1
-    console.log("Human wins the round!");
-  } else if (winner === "computer") {
-    computerScore += 1
-    console.log("Computer wins the round!");
-  } else console.log("Round tie!");
-}
+  function playRound(humanChoice, computerChoice){
+    const winner = getRoundWinner(humanChoice, computerChoice)
+    if(winner === "human") {
+      humanScore += 1
+      console.log("Human wins the round!");
+    } else if (winner === "computer") {
+      computerScore += 1
+      console.log("Computer wins the round!");
+    } else console.log("Round tie!");
+  }
 
   for(let round = 0; round < TOTAL_ROUNDS; round++){
     console.log(`Round ${round + 1} of ${TOTAL_ROUNDS}`);
