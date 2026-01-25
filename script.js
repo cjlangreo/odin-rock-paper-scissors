@@ -10,3 +10,9 @@ function getComputerChoice(){
   console.log(`Computer chose ${choice}!`);
   return choice
 }
+
+function getHumanChoice(){
+  const humanChoice = prompt("What's your choice?").toLowerCase()
+  console.log(`Human chose ${humanChoice}!`);
+  return humanChoice
+}
