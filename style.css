@@ -1,0 +1,77 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+:root {
+  --background: #141829;
+  --accent: #FC7A1E;
+  --primary: #E7E7E7;
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hand-container {
+  display: flex;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hand-button {
+  padding: 1rem;
+  background-color: var(--primary);
+  display: inline-block;
+  border-radius: 10px;
+  height: fit-content;
+
+  border: none;
+  cursor: pointer;
+  transition: transform .2s;
+
+  box-shadow: var(--accent) 3px 3px;
+}
+
+.vs-text {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-shadow: var(--accent) 4px 4px;
+  margin: 10rem 0;
+}
+
+.highlighted {
+  background-color: var(--accent);
+  transform: scale(1.1, 1.1);
+}
+
+.player-tag {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary)
+}
+
+.winner-indicator {
+  color: var(--accent);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.score-indicator {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--primary)
+}
