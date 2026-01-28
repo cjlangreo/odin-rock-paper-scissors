@@ -11,11 +11,11 @@ function getComputerChoice(){
   return choice
 }
 
-function getHumanChoice(){
-  const humanChoice = prompt("What's your choice?").toLowerCase()
-  console.log(`Human chose ${humanChoice}!`);
-  return humanChoice
-}
+// function getHumanChoice(){
+  // const humanChoice = prompt("What's your choice?").toLowerCase()
+  // console.log(`Human chose ${humanChoice}!`);
+  // return humanChoice
+// }
 
 function getRoundWinner(humanChoice, computerChoice){
   if(
@@ -29,34 +29,31 @@ function getRoundWinner(humanChoice, computerChoice){
   } else return "computer"
 }
 
-function logScore(){
-    console.log(`Human score: ${humanScore}`);
-    console.log(`Computer score: ${computerScore}`);
+
+
+const humanHandContainer = document.querySelector(".human-hand")
+
+function highlightHand(element){
+  element.classList.toggle("highlighted")
 }
 
 
-function playGame(){
 
-  function playRound(humanChoice, computerChoice){
-    const winner = getRoundWinner(humanChoice, computerChoice)
-    if(winner === "human") {
-      humanScore += 1
-      console.log("Human wins the round!");
-    } else if (winner === "computer") {
-      computerScore += 1
-      console.log("Computer wins the round!");
-    } else console.log("Round tie!");
+humanHandContainer.addEventListener("click", event => {
+  const target = event.target;
+  
+  if(!(target.classList[0] === "hand-button")) return
+
+  highlightHand(target)
+  
+  const computerChoice = getComputerChoice()
+  console.log(computerChoice);
+  
+  
+  switch(target.id){
+    case "human-scissors":
+      const humanScissors = document.querySelector("#human-scissors")
+      
+      break
   }
-
-  for(let round = 0; round < TOTAL_ROUNDS; round++){
-    console.log(`Round ${round + 1} of ${TOTAL_ROUNDS}`);
-    logScore()
-    playRound(getHumanChoice(), getComputerChoice())
-  }
-  if(humanScore > computerScore) console.log("Human wins!");
-  else if (computerScore > humanScore) console.log("Computer wins!");
-  else console.log("It's a tie!");
-  logScore()
-}
-
-playGame()
+})
