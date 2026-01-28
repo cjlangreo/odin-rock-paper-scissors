@@ -11,11 +11,11 @@ function getComputerChoice(){
   return choice
 }
 
-function getHumanChoice(){
-  const humanChoice = prompt("What's your choice?").toLowerCase()
-  console.log(`Human chose ${humanChoice}!`);
-  return humanChoice
-}
+// function getHumanChoice(){
+  // const humanChoice = prompt("What's your choice?").toLowerCase()
+  // console.log(`Human chose ${humanChoice}!`);
+  // return humanChoice
+// }
 
 function getRoundWinner(humanChoice, computerChoice){
   if(
