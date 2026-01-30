@@ -39,6 +39,14 @@ button {
     transform: rotate(0) scale(1.1, 1.1);
   }
 }
+@keyframes card-idle {
+  0% {
+    transform: rotateY(10deg);
+  }
+  100% {
+    transform: rotateY(-10deg);
+  }
+}
 
 .highlighted {
   transform: scale(1.1, 1.1);
