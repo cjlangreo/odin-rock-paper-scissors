@@ -84,7 +84,7 @@ button {
   width: fit-content;
 }
 
-.human.side > h1 {
+.player-tag {
   text-align: center;
   font-size: 3rem;
   color: #FFFFCE;
