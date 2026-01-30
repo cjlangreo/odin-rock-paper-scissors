@@ -96,6 +96,7 @@ button {
   font-size: 3rem;
 }
 
+.score-container {
   display: flex;
   flex-direction: column;
   align-items: center;
