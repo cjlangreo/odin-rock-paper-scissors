@@ -39,6 +39,7 @@ button {
     transform: rotate(0) scale(1.1, 1.1);
   }
 }
+
 @keyframes card-idle {
   0% {
     transform: rotateY(10deg);
@@ -46,6 +47,10 @@ button {
   100% {
     transform: rotateY(-10deg);
   }
+}
+
+.human.hand:not(:hover):not(.highlighted) {
+  animation: 1s ease-in-out infinite 0s alternate card-idle;
 }
 
 .highlighted {
