@@ -42,7 +42,27 @@ function getWinner(humanChoice, computerChoice){
 
 
 function playRound(humanHand){
+  disableHands()
+  const computerChoice = getComputerChoice()
   
+  if(computerChoice === "rock") highlightHand(rockComputer)
+  else if (computerChoice === "paper") highlightHand(paperComputer)
+  else highlightHand(scissorsComputer)
+
+  const winner = getWinner(humanHand, computerChoice)
+
+  if(winner === "human"){
+    humanScore++
+    statusIndicator.innerText = "🧑 Human Wins! 🎉"
+  } else if(winner === "computer"){
+    computerScore++
+    statusIndicator.innerText = "🤖 Computer Wins! 🎉"
+  } else statusIndicator.innerText = "It's a tie!"
+
+  currentRound++
+  updateScores()
+  setTimeout(resetRound, 1500)
+}
 }
 
 function getComputerChoice(){
