@@ -104,6 +104,11 @@ button {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
+.side {
+  display: flex;
+}
+
 .stats.human {
   margin-left: 1rem
 }
