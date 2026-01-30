@@ -63,6 +63,7 @@ button {
 
 .highlighted {
   transform: scale(1.1, 1.1);
+  animation: 0.1s ease-in-out 0s shake
 }
 
 .human.hand {
