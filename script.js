@@ -86,3 +86,14 @@ function disableHands(){
     hand.style.pointerEvents = "none"
   })
 }
+
+function enableHands(){
+  humanHands.forEach(hand => {
+    hand.style.pointerEvents = "all"
+    hand.classList.remove("highlighted")
+  })
+
+  computerHands.forEach(hand => {
+    hand.classList.remove("highlighted")
+  })
+}
