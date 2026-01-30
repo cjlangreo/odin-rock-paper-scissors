@@ -81,3 +81,8 @@ function highlightHand(element){
   element.classList.toggle("highlighted")
 }
 
+function disableHands(){
+  humanHands.forEach(hand => {
+    hand.style.pointerEvents = "none"
+  })
+}
