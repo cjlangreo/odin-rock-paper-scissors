@@ -70,6 +70,9 @@ button {
   width: 150px;
   /* box-shadow: rgba(1, 1, 1, 0.3) 5px 5px 10px 5px; */
 }
+
+.hand-container.computer {
+  transform: rotate(180deg)
 }
 
 
