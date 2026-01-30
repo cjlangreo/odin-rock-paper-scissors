@@ -8,6 +8,7 @@ const TOTAL_ROUNDS = 5;
 const rockHuman = document.querySelector(".human.rock")
 const paperHuman = document.querySelector(".human.paper")
 const scissorsHuman = document.querySelector(".human.scissors")
+const humanHands = [rockHuman, paperHuman, scissorsHuman]
 const handContainerHuman = document.querySelector(".hand-container.human")
 
 handContainerHuman.addEventListener("click", event => {
