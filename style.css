@@ -90,7 +90,12 @@ button {
   color: #FFFFCE;
 }
 
-.human > .score-container {
+.status-indicator {
+  text-align: center;
+  color:#FFFFCE;
+  font-size: 3rem;
+}
+
   display: flex;
   flex-direction: column;
   align-items: center;
