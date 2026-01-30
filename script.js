@@ -13,6 +13,10 @@ const handContainerHuman = document.querySelector(".hand-container.human")
 
 const statusIndicator = document.querySelector(".status-indicator")
 statusIndicator.innerText = `Round ${currentRound}`
+
+const humanScoreIndicator = document.querySelector(".human .score-container > span")
+const computerScoreIndicator = document.querySelector(".computer .score-container > span")
+
 const rockComputer = document.querySelector(".computer.rock")
 const paperComputer = document.querySelector(".computer.paper")
 const scissorsComputer = document.querySelector(".computer.scissors")
