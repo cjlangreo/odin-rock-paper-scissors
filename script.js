@@ -18,6 +18,16 @@ handContainerHuman.addEventListener("click", event => {
   else if(event.target === scissorsHuman) playRound("scissors")
 })
 
+function getWinner(humanChoice, computerChoice){
+  if((humanChoice === "rock" && computerChoice === "scissors") ||
+      (humanChoice === "paper" && computerChoice === "rock") ||
+      (humanChoice === "scissors" && computerChoice === "paper")
+  ) return "human"
+  else if(humanChoice === computerChoice) return "tie"
+  else return "computer"
+}
+
+
 function playRound(humanHand){
   
 }
