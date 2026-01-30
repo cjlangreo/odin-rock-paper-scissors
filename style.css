@@ -57,6 +57,10 @@ button {
   animation: 1s ease-in-out infinite .3s alternate card-idle;
 }
 
+.human.hand:not(.highlighted):hover {
+  transform: scale(1.05, 1.05);
+}
+
 .highlighted {
   transform: scale(1.1, 1.1);
 }
