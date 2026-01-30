@@ -2,6 +2,7 @@ const choices = ["rock", "paper", "scissors"]
 
 let humanScore = 0;
 let computerScore = 0;
+let currentRound = 1;
 const TOTAL_ROUNDS = 5;
 
 const rockHuman = document.querySelector(".human.rock")
