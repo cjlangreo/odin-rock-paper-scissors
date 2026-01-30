@@ -67,6 +67,10 @@ function updateScores(){
   humanScoreIndicator.innerText = String(humanScore).padStart(2, 0)
   computerScoreIndicator.innerText = String(computerScore).padStart(2, 0)
 }
+
+function resetRound(){
+  enableHands()
+  statusIndicator.innerText = `Round ${currentRound}`
 }
 
 function getComputerChoice(){
