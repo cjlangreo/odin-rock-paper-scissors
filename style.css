@@ -11,8 +11,10 @@ body {
   height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 2rem;
 }
 
 button {
@@ -22,21 +24,59 @@ button {
 
 .human.hand {
   cursor: pointer;
-  transition: all .3s;
+  transition: all .1s;
   -webkit-user-drag: none;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-3deg) scale(1.05, 1.05);
+  }
+  50% {
+    transform: rotate(3deg) scale(1.075, 1.075);
+  }
+  100% {
+    transform: rotate(0) scale(1.1, 1.1);
+  }
+}
+
+@keyframes card-idle {
+  0% {
+    transform: rotateY(10deg);
+  }
+  100% {
+    transform: rotateY(-10deg);
+  }
+}
+
+.human.hand:not(:hover):not(.highlighted) {
+  animation: 1s ease-in-out infinite 0s alternate card-idle;
+}
+
+.computer.hand:not(.highlighted) {
+  animation: 1s ease-in-out infinite .3s alternate card-idle;
+}
+
+.human.hand:not(.highlighted):hover {
+  transform: scale(1.05, 1.05);
 }
 
 .highlighted {
   transform: scale(1.1, 1.1);
+  animation: 0.1s ease-in-out 0s shake
 }
 
-.human.hand {
-  width: 250px;
-  box-shadow: rgba(1, 1, 1, 0.3) 5px 5px 10px 5px;
+.hand {
+  width: 150px;
+  /* box-shadow: rgba(1, 1, 1, 0.3) 5px 5px 10px 5px; */
+}
+
+.hand-container.computer {
+  transform: rotate(180deg)
 }
 
 
-.hand-container.human {
+.hand-container {
   display: flex;
   column-gap: 2rem;
   justify-content: center;
@@ -44,17 +84,35 @@ button {
   width: fit-content;
 }
 
-.human.side > h1 {
+.player-tag {
   text-align: center;
   font-size: 3rem;
   color: #FFFFCE;
 }
 
-.human > .score-container {
+.status-indicator {
+  text-align: center;
+  color:#FFFFCE;
+  font-size: 3rem;
+}
+
+.score-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #FFFFCE;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.side {
+  display: flex;
+}
+
+.stats.human {
+  margin-left: 1rem
+}
+
+.stats.computer {
+  margin-right: 1rem;
 }
