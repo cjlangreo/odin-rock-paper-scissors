@@ -22,9 +22,10 @@ button {
 
 .human.hand {
   cursor: pointer;
-  transition: all .3s;
+  transition: all .1s;
   -webkit-user-drag: none;
 }
+
 @keyframes shake {
   0% {
     transform: rotate(-3deg) scale(1.05, 1.05);
