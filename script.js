@@ -10,7 +10,7 @@ const scissorsHuman = document.querySelector(".human.scissors")
 const handContainerHuman = document.querySelector(".hand-container.human")
 
 handContainerHuman.addEventListener("click", event => {
-  if(event.element) return
+  if(![...event.target.classList].includes("hand")) return
   
   highlightHand(event.target)
   if(event.target === rockHuman) playRound("rock")
