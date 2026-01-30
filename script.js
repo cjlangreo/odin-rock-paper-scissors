@@ -10,6 +10,10 @@ const paperHuman = document.querySelector(".human.paper")
 const scissorsHuman = document.querySelector(".human.scissors")
 const humanHands = [rockHuman, paperHuman, scissorsHuman]
 const handContainerHuman = document.querySelector(".hand-container.human")
+const rockComputer = document.querySelector(".computer.rock")
+const paperComputer = document.querySelector(".computer.paper")
+const scissorsComputer = document.querySelector(".computer.scissors")
+const computerHands = [rockComputer, paperComputer, scissorsComputer]
 
 handContainerHuman.addEventListener("click", event => {
   if(![...event.target.classList].includes("hand")) return
