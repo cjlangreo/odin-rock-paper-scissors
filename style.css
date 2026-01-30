@@ -25,6 +25,17 @@ button {
   transition: all .3s;
   -webkit-user-drag: none;
 }
+@keyframes shake {
+  0% {
+    transform: rotate(-3deg) scale(1.05, 1.05);
+  }
+  50% {
+    transform: rotate(3deg) scale(1.075, 1.075);
+  }
+  100% {
+    transform: rotate(0) scale(1.1, 1.1);
+  }
+}
 
 .highlighted {
   transform: scale(1.1, 1.1);
