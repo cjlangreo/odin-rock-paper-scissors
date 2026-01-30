@@ -53,6 +53,10 @@ button {
   animation: 1s ease-in-out infinite 0s alternate card-idle;
 }
 
+.computer.hand:not(.highlighted) {
+  animation: 1s ease-in-out infinite .3s alternate card-idle;
+}
+
 .highlighted {
   transform: scale(1.1, 1.1);
 }
