@@ -63,6 +63,10 @@ function playRound(humanHand){
   updateScores()
   setTimeout(resetRound, 1500)
 }
+function updateScores(){
+  humanScoreIndicator.innerText = String(humanScore).padStart(2, 0)
+  computerScoreIndicator.innerText = String(computerScore).padStart(2, 0)
+}
 }
 
 function getComputerChoice(){
