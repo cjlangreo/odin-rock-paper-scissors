@@ -71,6 +71,13 @@ main {
   justify-content: center;
 }
 
+.stats-container {
+  flex: 0 1 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 100px;
 }
 
 button {
