@@ -59,6 +59,11 @@ main {
   text-align: center;
 }
 
+.rounds-input:focus {
+  outline: 3px solid red;
+  outline-offset: 2px;
+}
+
 }
 
 button {
