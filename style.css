@@ -7,8 +7,10 @@
 }
 
 body {
-  background-image: url("images/starry-background.svg");
-  background-size: cover;
+  /* background-image: url("images/starry-background.svg"); */
+  /* background-size: cover; */
+
+  background-color: #c32f27;
   height: 100vh;
 
   display: flex;
