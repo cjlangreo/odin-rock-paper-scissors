@@ -27,6 +27,21 @@ main {
 
   flex: 1 1 0;
 }
+
+.sidebar {
+  height: 100vh;
+  background-color: #780116;
+
+  display: flex;
+  padding: 1rem 1rem;
+  flex-direction: column;
+
+  text-align: center;
+
+  box-shadow: rgba(0,0,0, .5) 5px 0 10px;
+  flex: 0 1 300px;
+}
+
 }
 
 button {
