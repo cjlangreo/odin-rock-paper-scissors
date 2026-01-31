@@ -5,26 +5,36 @@
     <script src="./script.js" type="module" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Rock, Paper, and Scissors | Odin</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Schoolbell&family=Sirivennela&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="computer side">
-      <div class="stats computer">
-        <h1 class="player-tag computer">COMPUTER</h1>
-        <div class="score-container">
-          Score
-          <span>00</span>
-        </div>
+    <aside class="sidebar">
+      <div class="header">
+        <h1>Rock, Paper, and Scissors</h1>
+        <hr>
+        <h2>The Odin Project</h2>
       </div>
-      <div class="hand-container computer">
-        <img class="computer rock hand" src="./images/rock.png" alt="">
-        <img class="computer paper hand" src="./images/paper.png" alt="">
-        <img class="computer scissors hand" src="./images/scissors.png" alt="">
+      <div class="options">
+        <label>
+          Rounds
+          <input type="number" min="1" value="5" class="rounds-input">
+        </label>
       </div>
-    </div>
+    </aside>
 
-    <h2 class="status-indicator"></h2>
+    <main>
+
+      <div class="hand-container computer">
+        <img class="computer scissors hand" src="./images/scissors.png" alt="">
+        <img class="computer paper hand" src="./images/paper.png" alt="">
+        <img class="computer rock hand" src="./images/rock.png" alt="">
+      </div>
     
-    <div class="human side">
+      <h2 class="status-indicator"></h2>
+
 
       <div class="hand-container human">
         <img class="human rock hand" src="./images/rock.png" alt="">
@@ -32,14 +42,27 @@
         <img class="human scissors hand" src="./images/scissors.png" alt="">
       </div>
 
-      <div class="stats human">
-        <h1 class="player-tag human">YOU</h1>
-        <div class="score-container">
-          Score
-          <span>00</span>
-        </div>
-      </div>
+    </main>
 
-    </div>
+    <aside class="stats-container">
+      
+        <div class="stats computer">
+          <h1 class="player-tag computer">COMPUTER</h1>
+          <div class="score-container">
+            Score
+          <span>00</span>
+          </div>
+        </div>
+
+        <div class="stats human">
+          <h1 class="player-tag human">YOU</h1>
+          <div class="score-container">
+            Score
+            <span>00</span>
+          </div>
+        </div>
+
+    </aside>
+
   </body>
 </html>
