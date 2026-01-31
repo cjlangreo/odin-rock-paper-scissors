@@ -168,11 +168,3 @@ button {
 .side {
   display: flex;
 }
-
-.stats.human {
-  margin-left: 1rem
-}
-
-.stats.computer {
-  margin-right: 1rem;
-}
