@@ -16,6 +16,8 @@ body {
   display: flex;
   color: #f7b538;  
 }
+main {
+  height: 100%;
 
   display: flex;
   flex-direction: column;
