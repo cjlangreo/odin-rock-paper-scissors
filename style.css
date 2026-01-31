@@ -64,6 +64,13 @@ main {
   outline-offset: 2px;
 }
 
+.options {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 }
 
 button {
