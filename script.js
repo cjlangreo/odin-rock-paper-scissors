@@ -82,6 +82,12 @@ function playRound(humanHand){
   } else statusIndicator.innerText = "It's a tie!"
   
   updateScores()
+  
+  if(currentRound == totalRounds) {
+    setTimeout(endGame, 1500)
+    return
+  }
+  
   currentRound++
   setTimeout(resetRound, 1500)
 }
