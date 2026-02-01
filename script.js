@@ -27,6 +27,11 @@ roundsinput.addEventListener("input", event => totalRounds = roundsinput.value)
 const resetGameButton = document.querySelector("button.reset")
 resetGameButton.addEventListener("click", resetGame)
 
+const sideBar = document.querySelector(".sidebar")
+const humanSide = document.querySelector(".human.side")
+const computerSide = document.querySelector(".computer.side")
+
+
 handContainerHuman.addEventListener("click", event => {
   if(![...event.target.classList].includes("hand")) return
   
