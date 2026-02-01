@@ -75,10 +75,10 @@ function playRound(humanHand){
   console.log(`Round winner: ${winner}`);
   if(winner === "human"){
     humanScore++
-    statusIndicator.innerText = "🧑 Human Wins! 🎉"
+    statusIndicator.innerText = "🧑 Human Wins Round! 🎉"
   } else if(winner === "computer"){
     computerScore++
-    statusIndicator.innerText = "🤖 Computer Wins! 🎉"
+    statusIndicator.innerText = "🤖 Computer Wins Round!! 🎉"
   } else statusIndicator.innerText = "It's a tie!"
 
   currentRound++
