@@ -21,6 +21,9 @@ const paperComputer = document.querySelector(".computer.paper")
 const scissorsComputer = document.querySelector(".computer.scissors")
 const computerHands = [rockComputer, paperComputer, scissorsComputer]
 
+const roundsinput = document.querySelector(".rounds-input")
+roundsinput.addEventListener("input", event => totalRounds = roundsinput.value)
+
 const resetGameButton = document.querySelector("button.reset")
 resetGameButton.addEventListener("click", resetGame)
 
