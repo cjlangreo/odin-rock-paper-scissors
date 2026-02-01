@@ -173,7 +173,9 @@ button.hand {
 .player-tag {
   text-align: center;
   font-size: 3rem;
+  margin: 1rem 0;
 }
+
 
 .status-indicator {
   text-align: center;
