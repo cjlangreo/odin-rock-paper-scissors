@@ -140,3 +140,13 @@ function endGame(){
   else if(computerScore > humanScore) statusIndicator.innerText = "🤖 Computer Wins!"
   
 }
+
+function toggleSidesVisiblity(show){
+  if(show){
+    computerSide.style.visibility = "visible"
+    humanSide.style.visibility = "visible"
+  } else {
+    computerSide.style.visibility = "hidden"
+    humanSide.style.visibility = "hidden"
+  }
+}
