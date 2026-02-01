@@ -98,6 +98,8 @@ function updateScores(){
 
 function resetRound(){
   enableHands()
+  displayCurrentRound()
+}
 
 function displayCurrentRound(){
   statusIndicator.innerText = `Round ${currentRound} / ${totalRounds}`
