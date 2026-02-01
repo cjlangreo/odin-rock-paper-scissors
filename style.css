@@ -90,6 +90,10 @@ button.reset {
   justify-content: center;
 }
 
+.options label {
+  font-size: 1.5rem;
+}
+
 .stats-container {
   flex: 0 1 300px;
 
