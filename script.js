@@ -129,3 +129,14 @@ function enableHands(){
     hand.classList.remove("highlighted")
   })
 }
+
+
+function endGame(){
+  toggleSidesVisiblity(false)
+  setTimeout(() => {toggleSidesVisiblity(true);resetGame()}, 2000)
+  
+  statusIndicator.innerText = "It's a tie!";
+  if(humanScore > computerScore) statusIndicator.innerText = "🧑 Human Wins!"
+  else if(computerScore > humanScore) statusIndicator.innerText = "🤖 Computer Wins!"
+  
+}
