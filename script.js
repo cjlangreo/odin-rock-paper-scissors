@@ -98,7 +98,9 @@ function updateScores(){
 
 function resetRound(){
   enableHands()
-  statusIndicator.innerText = `Round ${currentRound}`
+
+function displayCurrentRound(){
+  statusIndicator.innerText = `Round ${currentRound} / ${totalRounds}`
 }
 
 function getComputerChoice(){
