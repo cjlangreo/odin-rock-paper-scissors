@@ -39,6 +39,9 @@ button.reset {
   margin-top: 1rem;
 }
 
+.sidebar button:hover {
+  background-color: hsl(from #f7b538 h s calc(l + 5))
+}
 
 .sidebar {
   height: 100vh;
