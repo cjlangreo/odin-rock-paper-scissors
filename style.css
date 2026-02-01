@@ -103,7 +103,7 @@ button.reset {
   row-gap: 100px;
 }
 
-button {
+button.hand {
   background: none;
   border: none;
 }
