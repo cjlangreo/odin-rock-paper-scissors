@@ -32,6 +32,8 @@ const humanSide = document.querySelector(".human.side")
 const computerSide = document.querySelector(".computer.side")
 
 
+displayCurrentRound()
+
 handContainerHuman.addEventListener("click", event => {
   if(![...event.target.classList].includes("hand")) return
   
