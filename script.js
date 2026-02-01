@@ -21,6 +21,9 @@ const paperComputer = document.querySelector(".computer.paper")
 const scissorsComputer = document.querySelector(".computer.scissors")
 const computerHands = [rockComputer, paperComputer, scissorsComputer]
 
+const resetGameButton = document.querySelector("button.reset")
+resetGameButton.addEventListener("click", resetGame)
+
 handContainerHuman.addEventListener("click", event => {
   if(![...event.target.classList].includes("hand")) return
   
