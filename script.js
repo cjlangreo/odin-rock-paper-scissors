@@ -80,9 +80,9 @@ function playRound(humanHand){
     computerScore++
     statusIndicator.innerText = "🤖 Computer Wins Round!! 🎉"
   } else statusIndicator.innerText = "It's a tie!"
-
-  currentRound++
+  
   updateScores()
+  currentRound++
   setTimeout(resetRound, 1500)
 }
 function updateScores(){
