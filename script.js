@@ -52,6 +52,14 @@ function getWinner(humanChoice, computerChoice){
   else return "computer"
 }
 
+function resetGame(){
+  computerScore = 0;
+  humanScore = 0;
+  updateScores()
+  currentRound = 1;
+  enableHands()
+  displayCurrentRound()
+}
 
 function playRound(humanHand){
   disableHands()
