@@ -72,6 +72,10 @@ button.reset {
   border: none;
   padding: 0 0 0 5px;
   text-align: center;
+  font-size: 1.5rem;
+  background-color: #c32f27;
+  border:#f7b538 solid 3px;
+  color:#f7b538;
 }
 
 .rounds-input:focus {
