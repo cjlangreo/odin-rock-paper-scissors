@@ -39,6 +39,24 @@ button.reset {
   margin-top: 1rem;
 }
 
+@keyframes mini-shake {
+  0% {
+    transform: rotate(0) scale(1, 1)
+  }
+  
+  50% {
+    transform: rotate(3deg) scale(0.95, 0.95);
+  }
+  
+  100% {
+   transform: rotate(-3deg) scale(.9,.9); 
+  }
+}
+
+button.reset:active {
+  animation: 0.1s ease-in-out alternate 0s mini-shake
+}
+
 .sidebar button:hover {
   background-color: hsl(from #f7b538 h s calc(l + 5))
 }
