@@ -143,11 +143,6 @@ function endGame(){
 }
 
 function toggleSidesVisiblity(show){
-  if(show){
-    computerSide.style.visibility = "visible"
-    humanSide.style.visibility = "visible"
-  } else {
-    computerSide.style.visibility = "hidden"
-    humanSide.style.visibility = "hidden"
-  }
+  computerSide.style.visibility = show ? "visible" : "hidden"
+  humanSide.style.visibility = show ? "visible" : "hidden"
 }
