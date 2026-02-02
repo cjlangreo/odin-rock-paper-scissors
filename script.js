@@ -71,8 +71,8 @@ function playRound(humanHand){
 
   const winner = getWinner(humanHand, computerChoice)
 
-  
   console.log(`Round winner: ${winner}`);
+
   if(winner === "human"){
     humanScore++
     statusIndicator.innerText = "🧑 Human Wins Round! 🎉"
@@ -91,6 +91,7 @@ function playRound(humanHand){
   currentRound++
   setTimeout(resetRound, 1500)
 }
+
 function updateScores(){
   humanScoreIndicator.innerText = String(humanScore).padStart(2, 0)
   computerScoreIndicator.innerText = String(computerScore).padStart(2, 0)
